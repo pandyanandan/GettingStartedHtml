@@ -1,0 +1,397 @@
+			Welcome	To World Of Html
+
+
+	Full Form of HTML is Hyper Text Markup Language this is used to creat wrbsites and web pages.
+
+->Introduction
+->Creation
+->Tags
+->Text
+->List
+->Image
+->Link
+->Background
+->Table
+->Form
+->feame
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1)Intro:-					Introduction
+	+SGML – Standard Generalized Markup Language (1986)
+	+Mother of HTML and XML
+	+Describing document types in many field of human activity (clinical records to musical notations)
+	+Used in Aerospace, Defense, Semiconductor and Publishing industries
+
+	+Hyper Text Markup Language
+	+Hypertext – Dealing with links
+	+Markup – Designing documents with some styles or lay outs
+	+HTML document is a plain text file
+	+HTML recognized by Web Browser
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2) HTML Creation:-
+
+					HTML Creation
+	+Use Notepad or any text editor
+	+Type contents and save with (* .htm or .html) extension ##Eg. MyPage.html
+	+FrontPage, MS Word allows us to create web pages without any prior knowledge in HTML. Just save as web page and you will get the effect.
+
+
+				First Web Page
+
+	<HTML>
+	<HEAD>
+		<TITLE>
+		</TITLE>
+	</HEAD>
+	<BODY>
+	</BODY>
+</HTML>
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+3)tags:-
+					TAGS
+	+This Instructs the browser to do some operation.
+	+This are called Pillar of HTML
+	Tags van divided in two part
+		1)singular tags or empty tags
+		2)paired tage or container tags
+	Start Tag and End Tag
+	<Start TAG>
+	</End TAG>
+	Few examples singular tags or empty tags:
+	<hr>, <br> etc
+	Few examples paired tage or container tags:
+	<BODY>, <HTML> etc
+			Some Common HTML Tags and Their Meanings
+	+<p>…</p> -- Creates a paragraph
+	+<br /> -- Adds a line break
+	+<hr /> -- Separates sections with a horizontal rule
+	+<h1>…</h1> -- Displays a heading (h1-h6) 
+	+<ol>…</ol> -- Creates an ordered list
+	+<ul>…</ul> -- Creates an unordered list
+	+<img /> -- Inserts an image into the document
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+4)Text:-
+	Anything that we type between the tags <BODY> and </BODY> will appear on the browser.
+	Many formatting tags are available.
+
+Text Formatting:-
+	<BASEFONT>, <FONT>, <B>, <I>, <U>, <BR>, <STRONG>, <EM>, <SUB>, <SUP><SUPER>, <BLINK>, <STRIKE>, <Hx>
+	x = 1 to 6 (1 being the largest and 6 being the smallest)
+	<BLINK> works only in netscape.
+	<BIG>, <SMALL>
+
+Text Layout:-
+		<CENTER>
+	<DIV> (same as <P>)
+	<P>
+	<P ALIGN = “”> </P>
+	Right
+	Left
+	Center
+	Justify
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+5)HTML Lists:-
+
+				HTML Lists
+
+
+		there are three typers of the lists
+		2)Ordered Lists
+		1)Unordered Lists
+		3)Defination Lists
+		4)Nested lists
+
+
+
+
+		1)Unordered Lists
+	Lists follow a common skeleton every time — an outer container tag, 	and a new tag for each bullet. Observe:
+<ul>
+  <li>Bullet 1</li>
+  <li>Bullet 2</li>
+  <li>Bullet 3</li>
+</ul>
+	Which would create:
+	•	Bullet 1
+	•	Bullet 2
+	•	Bullet 3
+	Let’s explain:
+	<ul>
+	stands for Unordered List, which means that the bullets are not ranked 	or numbered in any way, they’re all the same.
+	<li>
+	means List Item, each one corresponding to a bullet.
+	Closing </li> tags are not strictly necessary in HTML 4, but 	I recommend that you always use them. They’ll help your stylesheets 	work better and will make a future transition to XHTML much easier. 	Leaving them out now may leave you with a tonne of work in the future.
+	You also don’t need to add in line breaks to go on to the next point, 	it will all be taken care of for you. Once a block of text is made 	into a bullet you can continue on formatting the text normally, and 	adding in paragraphs, images and the like.
+	Different bullets
+	It’s a simple matter of adding an attribute to change the nature of 	your bullets. For squareones, add type="square", and for empty 	circles, add type="circle" to the ul tag. They can also be added to 		lis to affect individual points. Examples:
+	 Is it a square? Oh, good.
+	o And this is a circle. Joy.
+	If you nest your lists (put one inside another), they will be indented 	underneath and the bullet type will change to show the transition, 	from disc (the default, full circle) to circle tosquare. Of course you 	can step in and change this order manually if you want. Note that 	these values must all be in lowercase.
+	
+
+
+	1)Ordered Lists
+	If you want your list to be ordered instead of unordered, it’s a 	simple matter of just substituting the <ul> elements with <ol>s, which 	of course stand for Ordered Lists.
+<ol>
+  <li>List Item 1</li>
+  <li>List Item 2</li>
+  <li>List Item 3</li>
+</ol>
+	This will create:
+	1.	List Item 1
+	2.	List Item 2
+	3.	List Item 3
+	See All that was changed was that one letter. Beyond that, the rest 		of the structure remains intact, meaning you still use lis the same 	you did already. Your browser will keep adding numbers if you keep		adding list items. You can add or take away any of the items and 	thelist will renumber itself into order.
+	You can nest different types of lists into each other if you want, 	just remember to close them correctly. The progression of bullet-types 	that happens when you nest still occurs if you put it under an ol.
+	Different types of numbers
+	You can change the stylings of your ordered lists too, with the same 	attribute syntax as before, just using different values. You can do 	Roman numerals, letters, and both of the above in small characters. 	The full list:
+	A.	type="A"
+	b.	type="a"
+	III.	type="I"
+	iv.	type="i"
+	Note that even if the list was to be labelled ’b’ or ’iv’, the 	attribute value is still set as the first number — i.e. ‘a’ and ‘i’.
+	Changing the start-point
+	If you need to start the count at a number other than 1, you just add 	another attribute, like so:
+	<ol start="5">
+	You can also step in the middle of a list and change the number of an 	item (and therefore all of the items that follow). Add value="9" to an 	item and the list will skip its numbering to 9 and then continue on to 	ten and onwards from there.
+
+	3)	Defination Lists
+		A definition list is a list of terms and corresponding 			definitions. Definition lists are typically formatted with the 			term 	on the left with the definition following on the right or 			on the 	next line. The definition text is typically indented 		with 	respect 	to the term.
+
+		An alternative format places the term left aligned in a wide 	margin and the definition on one or more lines to the right of the 	term. If 	the DT term does not fit in the DT column (one third of the display 	area), it 	may be extended across the page with the DD section moved to the next 	line, or 	it may be wrapped onto successive lines of the left hand column.
+
+		The opening list tag must be <DL>. It is followed by an 	optional list header (<LH>caption</LH>) and then by term names (<DT>) 		and definitions (<DD>). For example:
+
+<DL>
+<LH>List Header</LH>
+<DT>Term 1<dd>This is the definition of the first term.
+<DT>Term 2<dd>This is the definition of the second term.
+</DL>
+		4) Nested Lists
+
+		Nested liste is combination of all above lists.
+ 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+6) Image:-
+			Images
+	JPEG or GIF images are recognized by browsers
+	<IMG> tag will place image on your page
+	The attribute SRC, tells the location from which the image is to be 	taken
+	We can control size of the image (width and height attributes)
+	The attribute ALT will say the text to be displayed in the place of 	image, if image not found.The attribute BORDER specifies the thickness 	of border around the image.
+	Hspace and Vspace attributes allows us to add space to the left-right 	sides and top-bottom sides
+	Aligning images is also possible with the align property
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+7)Link:-
+			Hyperlink
+
+	<A> - Anchor tag
+	Its attribute – HREF will be the page to which we will be redirected.
+	<A HREF=“Second.html”>Click Here</A>
+	Click Here will appear in the browser like this.
+
+			Link Target
+	By default, links will open in the current window
+	We can specify values for the Target attribute to change this 	behaviour.
+	_blank – new window
+	_self – same window
+	_parent – frame superior to the frame where the hyperlink is in
+	_top – Cancels all frame and loads in new window.
+	We can specify the name of the frame where the link need to be opened.
+			Internal Link
+
+	To create a link with in that page, add a name attribute to the anchor 	tag and specify that name from the place where you want that 	navigation
+		<a name="chapter1">Some contents</a> 
+
+		Click <a href="#chapter1">here</a> to read chapter 1.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+8)Backgrounds:-
+			Backgrounds
+
+	For setting background of our page, we need to specify some properties 	in <BODY> tag.
+	BACKGROUND
+	BGCOLOR
+	BGSOUND
+	BGPROPERTIES
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+9)Tables:-
+			Tables
+	Help in arranging elements in our page in a neat way
+	Divide page into separate sections
+	Creating Menus
+	Adding form fields
+	Alignment of images
+			Table Creation
+	Table - <TABLE> </TABLE>
+	Row - <TR> </TR>
+	Column - <TD> </TD>
+	<TABLE BORDER=0>
+<TR>
+	<TD> 1 </TD>
+	<TD> 2 </TD>
+</TR> 
+</TABLE>
+			Table Attributes
+			Align – left, right, center
+			Valign – top or bottom
+			Background
+			Bgcolor
+			Border
+			Bordercolor 
+			Bordercolordark - shadow
+			Cellpadding
+			Cellspacing
+			Nowrap – protects from line break
+			Frame – deals with border adjustment – void, above, 				below,lhs, rhs,hsides, vsides, box
+			Width
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+10)Form:-
+			HTML Forms
+
+	HTML forms are used to pass data to a server.
+
+		A form can contain input elements like text fields, 	checkboxes, radio-buttons, submit buttons and more. A form can also 	contain select lists, textarea, fieldset, legend, and label elements.
+	The <form> tag is used to create an HTML form:
+
+<form>
+.
+input elements
+.
+</form>
+
+		HTML Forms - The Input Element
+
+The most important form element is the input element.
+
+The input element is used to select user information.
+
+An input element can vary in many ways, depending on the type attribute. An input element can be of type text field, checkbox, password, radio button, submit button, and more.
+
+The most used input types are described below.
+
+			Text Fields
+
+<input type="text" /> defines a one-line input field that a user can enter text into:
+
+<form>
+First name: <input type="text" name="firstname" /><br />
+Last name: <input type="text" name="lastname" />
+</form>
+How the HTML code above looks in a browser:
+
+First name:   
+Last name:  
+Note: The form itself is not visible. Also note that the default width of a text field is 20 characters. 
+
+			Password Field
+
+<input type="password" /> defines a password field:
+
+<form>
+Password: <input type="password" name="pwd" />
+</form>
+How the HTML code above looks in a browser:
+
+Password: 
+Note: The characters in a password field are masked (shown as asterisks or circles). 
+
+			Radio Buttons
+
+<input type="radio" /> defines a radio button. Radio buttons let a user select ONLY ONE one of a limited number of choices:
+
+<form>
+<input type="radio" name="sex" value="male" /> Male<br />
+<input type="radio" name="sex" value="female" /> Female
+</form>
+How the HTML code above looks in a browser:
+
+ Male
+ Female
+			Checkboxes
+
+<input type="checkbox" /> defines a checkbox. Checkboxes let a user select ONE or MORE options of a limited number of choices.
+
+<form>
+<input type="checkbox" name="vehicle" value="Bike" /> I have a bike<br />
+<input type="checkbox" name="vehicle" value="Car" /> I have a car 
+</form>
+		How the HTML code above looks in a browser:
+
+ I have a bike
+ I have a car
+			Submit Button
+
+<input type="submit" /> defines a submit button.
+
+A submit button is used to send form data to a server. The data is sent to the page specified in the form's action attribute. The file defined in the action attribute usually does something with the received input:
+
+<form name="input" action="html_form_action.asp" method="get">
+Username: <input type="text" name="user" />
+<input type="submit" value="Submit" />
+</form>
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+11)Frame:-
+			HTML Frames
+
+With frames, you can display more than one HTML document in the same browser window. Each HTML document is called a frame, and each frame is independent of the others.
+
+		The disadvantages of using frames are:
+
+The web developer must keep track of more HTML documents
+It is difficult to print the entire page
+The HTML frameset Element
+
+The frameset element holds two or more frame elements. Each frame element holds a separate document.
+
+The frameset element states only HOW MANY columns or rows there will be in the frameset.
+
+			The HTML frame Element
+
+The <frame> tag defines one particular window (frame) within a frameset.
+
+In the example below we have a frameset with two columns.
+
+The first column is set to 25% of the width of the browser window. The second column is set to 75% of the width of the browser window. The document "frame_a.htm" is put into the first column, and the document "frame_b.htm" is put into the second column:
+
+<frameset cols="25%,75%">
+   <frame src="frame_a.htm" />
+   <frame src="frame_b.htm" />
+</frameset>
+Note: The frameset column size can also be set in pixels (cols="200,500"), and one of the columns can be set to use the remaining space, with an asterisk (cols="25%,*").
+			
+				ATTRIBUATE
+
+			Filling Your Framesets
+When you create a framed page, the page that shows up in the URL has no real content (unless you have a <noframes> version). Instead, you create <frame> pages which provide the information for your page.
+
+The <frame> tag has 8 attributes associated with it.
+
+				src
+This is the only required attribute for the frame tag. The value of this attribute is the URL of the document you would like to be displayed in the frame.
+
+You can reference any HTML object, image, or multimedia element that could normally be displayed by a Web browser. (Keep in mind, if you use an image, it will not be tiled like a background image, but rather just displayed once.)
+
+				name
+This allows you to label your frames so that you can open new pages in specific frames. If you do not name your frames, all links will open in the frame that they are in.
+
+				noresize
+When you set the size of your frames, your readers can come in and change that size to suit them, unless you use the noresize attribute. This allows you to keep control of the layout of your page.
+
+				scrolling
+This attribute dictates the behavior of a scrollbar on your frames. If the frame is larger than the browser window, a scrollbar will appear. If you never want the scrollbars to appear, put scrolling=no in your frame tag. The "yes" option dictates that there will always be a scrollbar on the frame, even if there is nowhere to scroll. The option "auto" is only supported by Netscape, and allows the browser to decide whether to show a scrollbar or not.
+
+				marginheight
+This attribute defines how tall the margin between frames will be. It cannot be less than 1 pixel. Also, if the browser cannot display the desired values, then this attribute will be ignored.
+
+				marginwidth
+This attribute defines how wide the margin between frames will be. It cannot be less than 1 pixel. Also, if the browser cannot display the desired values, then this attribute will be ignored.
+
+				frameborder
+This attribute allows you to add or remove borders from a single frame on your page. Use the values "yes" or "1" to enable borders and "no" or "0" to disable borders. This attribute is handled differently in IE and Netscape, so if you want to use it, you should define the borders in all frames in your frameset so that you get a consistent view.
+
+				bordercolor (Netscape only)
+With Netscape, you can change the color of the frame's border using this tag. Use a color name or hex triplet, the same way you would with any other color attribute. Keep in mind that if two adjacent frames have different bordercolor's the border color will end up undefined
